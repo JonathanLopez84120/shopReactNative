@@ -19,7 +19,7 @@ export default function SplashScreen({ navigation }) {
     <ScrollView>
       <View>
         <Image
-          source={require('../assets/images/appLogo.png')}
+          source={require('../assets/splash_image.png')}
           fadeDuration={500}
           style={styles.image}
           resizeMode='contain'

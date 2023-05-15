@@ -40,20 +40,48 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   input: {
-    margin: 20,
     height: 60,
     borderRadius: 14,
-    paddingLeft: 20,
     paddingRight: 20,
-    backgroundColor: color.white,
     color: color.black,
     fontSize: 16,
   },
   label: {
+    marginTop: 20,
+    paddingLeft: 20,
+    paddingRight: 20,
     fontFamily: 'Montserrat',
     fontStyle: 'normal',
-    fontSize: '14px',
-    lineHeight: '17px',
+    fontSize: 14,
+    lineHeight: 17,
     color: color.bluePurple,
+  },
+  containerTextInput: {
+    flexDirection: 'row',
+    marginHorizontal: 20,
+    marginVertical: 10,
+    height: 60,
+    borderRadius: 14,
+    paddingLeft: 20,
+    paddingRight: 20,
+    borderColor: color.bluePurple,
+    borderWidth: 1,
+  },
+  containerCheckbox: {
+    flexDirection: 'row',
+    marginHorizontal: 20,
+    marginVertical: 10,
+    paddingLeft: 20,
+    paddingRight: 20,
+  },
+
+  /* eyeIcon: {
+    margin: 'auto'
+  }, */
+  checkbox: {
+    backgroundColor: color.grey,
+    width: 22,
+    height: 22,
+    borderRadius: 4,
   }
 });
