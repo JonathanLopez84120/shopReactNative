@@ -1,57 +1,50 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'node': true,
-    'es2021': true
+  env: {
+    browser: true,
+    node: true,
+    es2021: true,
   },
-  'parser': '@babel/eslint-parser',
-  'extends': [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'prettier'
-  ],
-  'parserOptions': {
-    'ecmaFeatures': {
-      'jsx': true
+  parser: '@babel/eslint-parser',
+  extends: ['eslint:recommended', 'plugin:react/recommended'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
-    'ecmaVersion': 12,
-    'sourceType': 'module'
+    ecmaVersion: 12,
+    sourceType: 'module',
   },
-  'plugins': ['react'],
-  'settings': {
-    'react': {
-      'version': 'detect',
+  plugins: ['react'],
+  settings: {
+    react: {
+      version: 'detect',
     },
   },
-  'rules': {
+  rules: {
     'accessor-pairs': 'error',
     'array-bracket-newline': 'error',
     'array-bracket-spacing': 'error',
     'array-callback-return': 'off',
     'array-element-newline': 'off',
     'arrow-body-style': 'off',
-    'indent': ['error', 2, { 'SwitchCase': 1 }],
+    indent: ['error', 2, {SwitchCase: 1}],
     'arrow-parens': [
       'error',
       'as-needed',
       {
-        'requireForBlockBody': true
-      }
+        requireForBlockBody: true,
+      },
     ],
     'arrow-spacing': [
       'error',
       {
-        'after': true,
-        'before': true
-      }
+        after: true,
+        before: true,
+      },
     ],
     'block-scoped-var': 'error',
     'block-spacing': 'error',
-    'brace-style': [
-      'error',
-      '1tbs'
-    ],
-    'camelcase': 'off',
+    'brace-style': ['error', '1tbs'],
+    camelcase: 'off',
     'capitalized-comments': 'off',
     'class-methods-use-this': 'off',
     'comma-dangle': 'off',
@@ -59,25 +52,22 @@ module.exports = {
     'comma-spacing': [
       'error',
       {
-        'after': true,
-        'before': false
-      }
+        after: true,
+        before: false,
+      },
     ],
     'comma-style': 'error',
-    'complexity': 'off',
-    'computed-property-spacing': [
-      'error',
-      'never'
-    ],
+    complexity: 'off',
+    'computed-property-spacing': ['error', 'never'],
     'consistent-return': 'off',
     'consistent-this': 'error',
-    'curly': 'error',
+    curly: 'error',
     'default-case': 'error',
     'default-case-last': 'error',
     'dot-location': 'off',
     'dot-notation': 'error',
     'eol-last': 'off',
-    'eqeqeq': 'error',
+    eqeqeq: 'error',
     'func-call-spacing': 'error',
     'func-name-matching': 'error',
     'func-names': 'off',
@@ -89,23 +79,17 @@ module.exports = {
     'id-denylist': 'error',
     'id-length': 'off',
     'id-match': 'error',
-    'implicit-arrow-linebreak': [
-      'error',
-      'beside'
-    ],
+    'implicit-arrow-linebreak': ['error', 'beside'],
     'init-declarations': 'off',
-    'jsx-quotes': [
-      'error',
-      'prefer-single'
-    ],
-    'quotes': ['error', 'single', { 'avoidEscape': true }],
+    'jsx-quotes': ['error', 'prefer-single'],
+    quotes: ['error', 'single', {avoidEscape: true}],
     'key-spacing': 'error',
     'keyword-spacing': [
       'error',
       {
-        'after': true,
-        'before': true
-      }
+        after: true,
+        before: true,
+      },
     ],
     'line-comment-position': 'off',
     'linebreak-style': 'off',
@@ -217,10 +201,7 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     'nonblock-statement-body-position': 'error',
     'object-curly-newline': 'error',
-    'object-curly-spacing': [
-      'error',
-      'always'
-    ],
+    'object-curly-spacing': ['error', 'always'],
     'object-property-newline': 'off',
     'one-var': 'off',
     'one-var-declaration-per-line': 'error',
@@ -240,45 +221,33 @@ module.exports = {
     'prefer-spread': 'error',
     'prefer-template': 'error',
     'quote-props': 'off',
-    'radix': 'off',
+    radix: 'off',
     'require-await': 'off',
     'require-unicode-regexp': 'off',
     'rest-spread-spacing': 'error',
-    'semi': 'error',
+    semi: 'error',
     'semi-spacing': 'error',
-    'semi-style': [
-      'error',
-      'last'
-    ],
+    'semi-style': ['error', 'last'],
     'sort-keys': 'off',
     'react/prop-types': 'off',
     'react/display-name': 'off',
     'sort-vars': 'error',
     'space-before-blocks': 'error',
     'space-before-function-paren': 'off',
-    'space-in-parens': [
-      'error',
-      'never'
-    ],
+    'space-in-parens': ['error', 'never'],
     'space-infix-ops': 'error',
     'space-unary-ops': 'error',
     'spaced-comment': 'error',
-    'strict': 'error',
+    strict: 'error',
     'switch-colon-spacing': 'error',
     'symbol-description': 'error',
     'template-curly-spacing': 'error',
     'template-tag-spacing': 'error',
-    'unicode-bom': [
-      'error',
-      'never'
-    ],
+    'unicode-bom': ['error', 'never'],
     'vars-on-top': 'error',
     'wrap-iife': 'error',
     'wrap-regex': 'error',
     'yield-star-spacing': 'error',
-    'yoda': [
-      'error',
-      'never'
-    ]
-  }
+    yoda: ['error', 'never'],
+  },
 };

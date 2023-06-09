@@ -1,40 +1,24 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React, { createContext, useEffect, useState } from 'react';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Routes from './Routes';
 
-import React from 'react';
-import SplashScreen from './src/page/SplashScreen';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import SignUp from './src/page/SignUp';
-import SignIn from './src/page/SignIn';
-
-const Stack = createNativeStackNavigator();
-
+export const UserContext = createContext({});
 
 function App(): JSX.Element {
 
+  const [user, setUser] = useState();
+
+  useEffect(() => {
+    console.log('user : ', user);
+  }, [user]);
+
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name='SplashScreen' // nom
-          component={SplashScreen} // composent de référence (à importer)
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name='SignUp' // nom
-          component={SignUp} // composent de référence (à importer)
-        />
-        <Stack.Screen
-          name='SignIn' // nom
-          component={SignIn} // composent de référence (à importer)
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <SafeAreaProvider>
+      <UserContext.Provider value={{ user, setUser }}>
+        <Routes/>
+      </UserContext.Provider>
+    </SafeAreaProvider>
+
   );
 }
 
